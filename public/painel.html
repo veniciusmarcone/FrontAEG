@@ -606,7 +606,7 @@ code{font-family:var(--mono);font-size:12px;background:#f3f4f6;padding:1px 6px;b
     <div class="sb-conn">
       <label>URL da API</label>
       <div class="sb-conn-row">
-        <input type="text" id="apiUrl" placeholder="http://localhost:8080" value="http://localhost:8080"/>
+        <input type="text" id="apiUrl" placeholder="https://backaeg.onrender.com" value="https://backaeg.onrender.com"/>
         <button class="btn-conn" onclick="conectar()">OK</button>
       </div>
       <div class="conn-status">
@@ -987,7 +987,8 @@ https://seusite.com.br<span style="color:#f59e0b">?utm_source=</span><span style
 // ═══════════════════════════════════════════
 //  ESTADO GLOBAL
 // ═══════════════════════════════════════════
-let API = 'http://localhost:8080';
+/** URL padrão da API em produção. Em dev local, altere no campo ao lado e clique em OK. */
+let API = 'https://backaeg.onrender.com';
 let connected = false;
 let currentSec = 'dashboard';
 let leadsPage = 1;
